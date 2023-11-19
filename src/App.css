@@ -1,0 +1,167 @@
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url(https://images.unsplash.com/photo-1639322537138-5e513100b36e?q=80&w=2832&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D); 
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat; 
+}
+
+.welcome-message {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  color:#ffffff;
+  background-color: black;
+}
+
+.login-button {
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 0.3rem;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+  background-color: rgb(168, 176, 183);
+}
+
+
+.connected-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url(https://img.freepik.com/free-vector/white-minimal-hexagons-background_79603-1452.jpg);
+  background-size: cover;
+  background-position: center 30%; 
+  background-repeat: no-repeat; 
+}
+.connected-mainheader {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.connected-header {
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.connected-warning {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: rgb(192, 51, 51);
+}
+.connected-account {
+  font-size: 0.8rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.connected-timeaccount {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+  text-align: right;
+  width : 100%;
+  color: rgb(192, 51, 51);
+
+  /* animation properties */
+  -moz-transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  
+  -moz-animation: my-animation 10s linear infinite;
+  -webkit-animation: my-animation 10s linear infinite;
+  animation: my-animation 10s linear infinite;
+}
+
+/* for Firefox */
+@-moz-keyframes my-animation {
+  from { -moz-transform: translateX(-100%); }
+  to { -moz-transform: translateX(100%); }
+}
+
+/* for Chrome */
+@-webkit-keyframes my-animation {
+  from { -webkit-transform: translateX(-100%); }
+  to { -webkit-transform: translateX(100%); }
+}
+
+@keyframes my-animation {
+  from {
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+  to {
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+}
+  
+
+.connected-button {
+  background-color: rgb(3, 74, 79);
+  color: #fff;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 0.2rem;
+  padding: 0.8rem 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 2rem;
+}
+
+.connected-button:hover {
+  background-color: rgb(4, 125, 133);
+}
+
+.connected-contract-address {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.connected-candidates {
+  font-size: 1.1rem;
+  text-align: center;
+  font-weight :bold;
+}
+
+
+.candidates-table {
+  border-collapse: collapse;
+  width: 50%;
+  text-align:center;
+}
+
+.candidates-table th, .candidates-table td {
+  padding: 8px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.candidates-table th {
+  background-color: #f2f2f2;
+}
+
+input[type=number] {
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
