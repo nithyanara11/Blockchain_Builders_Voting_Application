@@ -1,4 +1,4 @@
-# Decentralized Voting Application
+# Blockchain Decentralized Voting Application
 
 ## Installation
 
