@@ -15,7 +15,7 @@
   text-align: center;
   margin-bottom: 3rem;
   color:#ffffff;
-  background-color: black;
+  background-color: #171717;
 }
 
 .login-button {
@@ -33,57 +33,52 @@
   background-color: rgb(168, 176, 183);
 }
 
-
 .connected-container {
   display: flex;
+  margin: auto;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-image: url(https://img.freepik.com/free-vector/white-minimal-hexagons-background_79603-1452.jpg);
+  background-image: url(https://d1sr9z1pdl3mb7.cloudfront.net/wp-content/uploads/2022/01/08130132/digital-identity-fingerprint-scaled.jpg);
   background-size: cover;
-  background-position: center 30%; 
+  background-position: center; 
   background-repeat: no-repeat; 
 }
+
 .connected-mainheader {
   font-size: 3rem;
   text-align: center;
   margin-bottom: 2rem;
+  color:whitesmoke;
 }
 
 .connected-header {
-  font-size: 1rem;
+  font-size: 1.5rem;
   text-align: center;
   margin-bottom: 2rem;
+  color:whitesmoke;
 }
 
 .connected-warning {
   font-size: 1.5rem;
   text-align: center;
   margin-bottom: 2rem;
-  color: rgb(192, 51, 51);
+  color: white;
 }
 .connected-account {
   font-size: 0.8rem;
   text-align: center;
   margin-bottom: 2rem;
+  color:whitesmoke;
 }
 
 .connected-timeaccount {
   font-size: 1.3rem;
   margin-bottom: 2rem;
-  text-align: right;
+  text-align: center;
   width : 100%;
-  color: rgb(192, 51, 51);
-
-  /* animation properties */
-  -moz-transform: translateX(-100%);
-  -webkit-transform: translateX(-100%);
-  transform: translateX(-100%);
-  
-  -moz-animation: my-animation 10s linear infinite;
-  -webkit-animation: my-animation 10s linear infinite;
-  animation: my-animation 10s linear infinite;
+  color: white;
 }
 
 /* for Firefox */
@@ -111,7 +106,6 @@
   }
 }
   
-
 .connected-button {
   background-color: rgb(3, 74, 79);
   color: #fff;
@@ -121,7 +115,9 @@
   padding: 0.8rem 1.2rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  margin:1rem;
   margin-bottom: 2rem;
+  margin-left:4rem;
 }
 
 .connected-button:hover {
@@ -134,16 +130,18 @@
 }
 
 .connected-candidates {
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   text-align: center;
   font-weight :bold;
+  color:whitesmoke;
 }
-
 
 .candidates-table {
   border-collapse: collapse;
   width: 50%;
   text-align:center;
+  color: whitesmoke;
+  background-color: transparent;
 }
 
 .candidates-table th, .candidates-table td {
@@ -153,7 +151,7 @@
 }
 
 .candidates-table th {
-  background-color: #f2f2f2;
+  background-color:rgb(4, 125, 133);
 }
 
 input[type=number] {
@@ -165,3 +163,42 @@ input[type=number] {
   margin-bottom: 10px;
 }
 
+
+
+
+.candidates-container {
+  display: flex;
+  justify-content: space-around; /* Adjust as needed */
+  align-items: center; /* Adjust as needed */
+}
+
+.candidate-card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+  width: 200px; /* Adjust as needed */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color:whitesmoke;
+}
+
+.candidate-image {
+  width: 100px; /* Adjust as needed */
+  height: 100px; /* Adjust as needed */
+  /* object-fit: fill; */
+  border-radius: 50%; /* Assuming you want rounded images */
+  margin-bottom: 10px;
+}
+
+.card-details {
+  text-align: center;
+}
+
+.card-header {
+  font-weight: bold;
+}
+
+.card-body {
+  margin-top: 10px;
+}

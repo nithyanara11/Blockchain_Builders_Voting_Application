@@ -31,6 +31,7 @@ constructor(string[] memory _candidateNames, uint256 _durationInMinutes) {
         _;
     }
 
+    //function to add candidates
     function addCandidate(string memory _name) public onlyOwner {
         candidates.push(Candidate({
                 name: _name,
@@ -38,6 +39,7 @@ constructor(string[] memory _candidateNames, uint256 _durationInMinutes) {
         }));
     }
 
+    //function to check if user has voted
     function vote(uint256 _candidateIndex) public {
         require(!voters[msg.sender], "You have already voted.");
         require(_candidateIndex < candidates.length, "Invalid candidate index.");
@@ -46,14 +48,17 @@ constructor(string[] memory _candidateNames, uint256 _durationInMinutes) {
         voters[msg.sender] = true;
     }
 
+    //function to get votes of candidates after voting
     function getAllVotesOfCandiates() public view returns (Candidate[] memory){
         return candidates;
     }
 
+    //function to get voting status of user
     function getVotingStatus() public view returns (bool) {
         return (block.timestamp >= votingStart && block.timestamp < votingEnd);
     }
 
+    //function to get remaining time left for user to vote
     function getRemainingTime() public view returns (uint256) {
         require(block.timestamp >= votingStart, "Voting has not started yet.");
         if (block.timestamp >= votingEnd) {

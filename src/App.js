@@ -69,7 +69,7 @@ function App() {
       const candidatesList = await contractInstance.getAllVotesOfCandiates();
       const formattedCandidates = candidatesList.map((candidate, index) => {
         return {
-          index: index+1,
+          index: index,
           name: candidate.name,
           voteCount: candidate.voteCount.toNumber()
         }
